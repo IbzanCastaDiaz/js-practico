@@ -25,7 +25,7 @@
     <section>
         <h2>Calcular el área y perímetro de un triangulo</h2>
         <form action="">
-            <label for="InputTrianguloA">Escribe cuánto mide el lado "A", "B", "Base" y "Altura" de tu triangulo</label>
+            <label for="InputTrianguloA">Escribe cuánto mide el lado "A", "B", "Base" y "Altura" de tu tríangulo</label>
             <input id="InputTrianguloA" type="number">
             <input id="InputTrianguloB" type="number">
             <input id="InputTrianguloBase" type="number">
@@ -41,6 +41,17 @@
             <input id="InputCirculo" type="number">
             <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
             <button type="button" onclick="calcularAreaCirculo()">Calcula el área</button>
+        </form>
+    </section>
+    <section>
+        <h2>Calcular la altura de un triangulo isósceles</h2>
+        <form action="">
+            <label for="">Escribe cuanto mide el lado "A", "B" y "C (Base)" de tu tríangulo</label>
+            <input id="InputTA" type="number">
+            <input id="InputTB" type="number">
+            <input id="InputTC" type="number">
+            <button type="button" onclick="verificarAIgualB()">"A" si es igual a "B"</button>
+            <button type="button" onclick="calcularAlturaTriangulo()">Calcular la altura</button>
         </form>
     </section>
     <script src="./figurasFunction.js"></script>

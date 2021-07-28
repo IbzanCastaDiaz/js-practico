@@ -91,3 +91,33 @@ function calcularAreaCirculo(){
     const area=areaCirculo(valueCirculo);
     alert(area);
 }
+
+//triangulo isósceles
+function AIgualB(A, B){
+    if (A != B) {
+        return ("A no es igual a B");
+    } else {
+        return ("A si es igual a B");
+    }
+}
+function verificarAIgualB(){
+    const inputTA=document.getElementById("InputTA");
+    const inputTB=document.getElementById("InputTB");
+    const valueTA=inputTA.value;
+    const valueTB=inputTB.value;
+    const calcularAIgualB=AIgualB(valueTA, valueTB);
+    alert(calcularAIgualB);
+}
+function alturaTriangulo(a, base){
+    const hipotenusa=(a*a);
+    const cateto=(base/2)*(base/2); 
+    return(Math.sqrt(hipotenusa - cateto));
+}
+function calcularAlturaTriangulo(){
+    const inputTA=document.getElementById("InputTA");
+    const inputTC=document.getElementById("InputTC");
+    const valueTA=inputTA.value;
+    const valueTC=inputTC.value;
+    const altura=alturaTriangulo(valueTA, valueTC);
+    alert(altura);
+}
